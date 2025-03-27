@@ -3,10 +3,10 @@ import Portfolio from './pages/portfolio/Portfolio';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import AppLayout from './components/AppLayout';
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createHashRouter, RouterProvider } from "react-router";
 
 const App = () => {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <AppLayout />,
